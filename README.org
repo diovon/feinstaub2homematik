@@ -2,18 +2,18 @@
 
 Das Skript ist eine Adaption des Skriptes, das bereits im Homematic-Forum diskutiert und publiziert wurde. Im ursprünglichen [[https://homematic-forum.de/forum/viewtopic.php?f=18&t=43201&sid=1f958be783e0acee13e7205c7bcbabe4&start=30][Beitrag]] wurde allerdings noch der ältere Lufttemperatur und -feuchtigkeitssensor verwendet. Ich habe das Skript an den Sensor BME280 angepasst, der zuverlässiger arbeitet und zusätzlich noch den Luftdruck messen kann.
 
-* Funktionsweise des Skriptes
+** Funktionsweise des Skriptes
 
 Das Skript fragt die Messwerte über eine JSON-Schnittstelle ab. Daraus exrahiert es die Messwerte und speichert sie in die entsprechenden Variablen.
 
-* Voraussetzung für die Verwendung des Skriptes
+** Voraussetzung für die Verwendung des Skriptes
 
 - bereits vorhandene und funktionierende [[https://sensor.community/de/sensors/airrohr/][Feinstaub-Messanlage]] ([[https://luftdaten.info][luftdaten.info]])
 - IP-Adresse der Feinstaub-Messanlage
 - Homematic SmartHome-System mit einer CCU2 oder CCU3
 - für jeden Messwert eine entsprechende System Variable in der CCU
  
-* Notwendige Anpassungen im Skript
+** Notwendige Anpassungen im Skript
 
 - IP-Adresse der Messstelle unter <IP-des-Sensors> eintragen
 - Unter "!Feinstaubwert in die Variable eintragen" die Variablennamen auf die eigenen Variablen anpassen
